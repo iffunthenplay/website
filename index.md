@@ -2,15 +2,19 @@
 layout: homepage.html
 ---
 
-Podcast about games and game development.
+It's a podcast about making games, by developers who rarely finish what they set out to do!
 
-We discuss game development, design and disect games we have played recently (while not really taking ourselves too seriously). We also talk about our own projects - past, present and future.
+We chat about programming, designing, and we break down the games we're playing and building.
 
-<ul>
-{%- for episode in collections.episode -%}
+Nothing is taken too seriously.
+
+{% assign episodes = collections.episode | reverse %}
+
+<ul class="episode-list">
+{%- for episode in episodes -%}
   <li>
     <a href="{{ episode.url }}">
-      Episode {{ forloop.index }}: {{ episode.data.title }}
+      Episode {{ episode.data.number }}: {{ episode.data.title }}
     </a>
     <p>{{ episode.data.description }}</p>
   </li>
