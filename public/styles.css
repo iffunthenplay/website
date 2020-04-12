@@ -1,0 +1,49 @@
+@font-face {
+  font-family: xkcd;
+  src: url(./xkcd.woff);
+}
+
+body {
+  font-family: xkcd;
+  word-spacing: 6px;
+  font-size: 15pt;
+  line-height: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header.container {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 12px;
+}
+
+.episode-title {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.episode-number {
+  color: #888;
+}
+
+blockquote {
+  margin-left: 0;
+  border-left: solid 3px #aaa;
+  color: #777;
+  padding-left: 32px;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 10pt;
+  word-spacing: 0;
+}
+
+pre {
+  background: whitesmoke;
+  padding: 8px 16px;
+}
