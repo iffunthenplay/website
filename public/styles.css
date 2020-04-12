@@ -21,6 +21,19 @@ header.container {
   padding-bottom: 12px;
 }
 
+nav.container {
+  display: flex;
+}
+
+nav.container > * {
+  display: flex;
+}
+
+nav.container a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .episode-title {
   margin-top: 12px;
   margin-bottom: 24px;
@@ -46,4 +59,8 @@ code {
 pre {
   background: whitesmoke;
   padding: 8px 16px;
+}
+
+nav .site-logo {
+  margin-right: 8px;
 }
