@@ -24,6 +24,9 @@
         <div class="episode-number">Episode {{ number }}</div>
         <h1 class="episode-title">{{ title }}</h1>
       </div>
+      {% if image %}
+        <img src="{{ image }}" height="230"></img>
+      {% endif %}
     </header>
 
     <div class="container player">
