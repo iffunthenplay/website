@@ -22,6 +22,10 @@ header.container {
   padding-bottom: 12px;
 }
 
+footer.container {
+  margin: 48px 0;
+}
+
 nav.container {
   display: flex;
 }
@@ -64,4 +68,8 @@ pre {
 
 nav .site-logo {
   margin-right: 8px;
+}
+
+.episode-list {
+  margin-top: 48px;
 }
